@@ -1,4 +1,4 @@
-//this file goes with languages.html
+//this file is meant to go with politics.html
 // michellesri adding js here for the chart
 
 var canvas = document.getElementById('canvas');
