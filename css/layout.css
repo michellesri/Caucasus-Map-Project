@@ -1,37 +1,68 @@
-/*section {
-  padding: 8rem 0rem 8rem 0rem;
-}*/
-
+/* Navigation Bar - Fixed
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav {
   width: 100%;
-  /*height: 50px;*/
-  /*padding: 1rem 0px 1rem 0px;*/
   background-color: #505150;
   position: fixed;
-  /*z-index: 99;*/
 }
-
-/*header {
-  margin: 20px 0px;
-  background-color: #505150;
-}*/
 
 .logo {
   display:inline-block;
   padding: 10px;
+  color: #faf5e6;
 }
 
 .nav {
   display:inline-block;
-  padding: 10px 30px;
+  padding: 10px 20px;
+  /*color: #faf5e6;*/
+}
+
+footer {
+  width: 100%;
+  background-color: #505150;
+  text-align: center;
+  padding: 2rem 0rem;
+}
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.sect1,
+.sect2,
+.sect3 {
+  width: 100%;
+  background-color: #faf5e6;
+}
+
+.sect1 {
+  padding-top: 8rem;
+}
+
+#2home {
+  background-color: #574658;
+}
+
+
+/* to be named/grouped
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+  background-color: #505150;
 }
 
 a {
   text-decoration: none;
+  /*color: #edc16d*/
 }
 
-footer {
+h1 {
   text-align: center;
+}
+
+#navButtons {
+  text-align: center;
+  padding: 5rem;
+  margin: auto;
+
 }
 
 
