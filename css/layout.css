@@ -1,3 +1,41 @@
+/*section {
+  padding: 8rem 0rem 8rem 0rem;
+}*/
+
+nav {
+  width: 100%;
+  /*height: 50px;*/
+  /*padding: 1rem 0px 1rem 0px;*/
+  background-color: #505150;
+  position: fixed;
+  /*z-index: 99;*/
+}
+
+/*header {
+  margin: 20px 0px;
+  background-color: #505150;
+}*/
+
+.logo {
+  display:inline-block;
+  padding: 10px;
+}
+
+.nav {
+  display:inline-block;
+  padding: 10px 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+}
+
+
+/*verify against skeleton css - likely needs to be changed.*/
 .bgrdInfo {
   text-indent: 50px;
 }
