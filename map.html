@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"></meta>
+  <!-- <meta charset="utf-8"></meta>
   <link rel="stylesheet" href="vendor/leaflet.css" />
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+   -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.css' rel='stylesheet' />
+
 
   <!-- <link rel="stylesheet" type="text/css" href="css/layout.css">
   <link rel="stylesheet" type="text/css" href="css/animation.css">
@@ -11,14 +15,23 @@
 </head>
 
 <body>
-  <!-- div id="page" open -->
+  <div id='map' style='width: 400px; height: 300px;'></div>
+  <script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoibGl6emllZ29vZGluZyIsImEiOiJjaW92cmc1NHYwMWJsdW9tOHowdTA2cnFsIn0.lFq-Wju99kZ_dR_2TMBYCQ';
+  var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/lizziegooding/ciow0rloz002uasnhjvd4actj'
+  });
+</script>
+
+  <!-- div id="page" open
   <div id="mapid"></div>
-  <!-- div id="page" close -->
+  div id="page" close
   <style>
   #mapid { height: 180px; }
   </style>
-<!-- <script src="vendor/leaflet.js"></script>
-<script src="js/app.js"></script> -->
+<script src="vendor/leaflet.js"></script>
+<script src="js/app.js"></script>
 <script src="vendor/leaflet.js"></script>
 <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 <script>
@@ -26,10 +39,10 @@
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
     maxZoom: 18,
-    id: 'your.mapbox.project.id',
-    accessToken: 'your.mapbox.public.access.token'
+    id: 'ymapbox://styles/lizziegooding/ciow0rloz002uasnhjvd4actj',
+    accessToken: 'pk.eyJ1IjoibGl6emllZ29vZGluZyIsImEiOiJjaW92cmc1NHYwMWJsdW9tOHowdTA2cnFsIn0.lFq-Wju99kZ_dR_2TMBYCQ'
 }).addTo(mymap);
-</script>
+</script> -->
 
 </body>
 </html>
