@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8"></meta>
   <link rel="stylesheet" href="vendor/leaflet.css" />
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
 
   <!-- <link rel="stylesheet" type="text/css" href="css/layout.css">
   <link rel="stylesheet" type="text/css" href="css/animation.css">
@@ -11,13 +12,24 @@
 
 <body>
   <!-- div id="page" open -->
-  <div id="page">
-
-  </div>
+  <div id="mapid"></div>
   <!-- div id="page" close -->
-
+  <style>
+  #mapid { height: 180px; }
+  </style>
 <!-- <script src="vendor/leaflet.js"></script>
 <script src="js/app.js"></script> -->
-<script src="/path/to/leaflet.js"></script>
+<script src="vendor/leaflet.js"></script>
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+<script>
+  var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18,
+    id: 'your.mapbox.project.id',
+    accessToken: 'your.mapbox.public.access.token'
+}).addTo(mymap);
+</script>
+
 </body>
 </html>
