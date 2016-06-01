@@ -3,7 +3,7 @@
 
 var canvas = document.getElementById('canvas');
 
-var countryNames = ['russia', 'turkey', 'iran', 'georgia', 'armenia', 'azerbaijan'];
+var countryNames = ['Russia', 'Turkey', 'Iran', 'Georgia', 'Armenia', 'Azerbaijan'];
 
 // the number of speakers in the world is in the millions and corresponds to the order of the country names
 // notes about the data (found on wikipedia.com):
@@ -25,7 +25,7 @@ function draw(countryNames, speakersInWorld) {
     data: {
       labels: countryNames,
       datasets: [{
-        label: 'Speakers in the world',
+        label: 'Speakers in the World',
         data: speakersInWorld,
       }]
     },
