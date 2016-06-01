@@ -81,6 +81,16 @@ footer a:hover {
   padding: 10rem 5rem 5rem 5rem;
 }
 
+/* Lang Page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#lang2 {
+  background-color: #fff;
+}
+
+.blurbs {
+  display: none;
+}
+
 /* Politics Page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #pol1 {
