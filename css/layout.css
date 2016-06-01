@@ -91,6 +91,14 @@ footer a:hover {
   display: none;
 }
 
+.bold {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.pron {
+  font-size: 1.5em;
+}
 /* Politics Page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #pol1 {

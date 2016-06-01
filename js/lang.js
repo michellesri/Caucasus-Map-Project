@@ -1,38 +1,3 @@
-// this file goes with languages.html
-// michellesri adding js here for the chart
-//
-// var canvas = document.getElementById('canvas');
-//
-// var countryNames = ['russia', 'turkey', 'iran', 'georgia', 'armenia', 'azerbaijan'];
-//
-// // the population of the countries is in the millions and corresponds to the order of the country names
-// var countryPop = ['143500000', '74930000', '74450000', '4477000', '2977000', '9417000'];
-//
-// function draw(countryNames, countryPop) {
-//
-//   canvas.style.display = 'block';
-//   var myChart = new Chart(canvas, {
-//     type: 'bar',
-//     data: {
-//       labels: countryNames,
-//       datasets: [{
-//         label: 'population of countries',
-//         data: countryPop,
-//       }]
-//     },
-//     options: {
-//       scales: {
-//         yAxes: [{
-//           ticks: { beginAtZero:true}
-//         }]
-//       }
-//     }
-//   });
-// }
-//
-// draw(countryNames, countryPop);
-//
-// code for the map
 var russian = document.getElementById('Russian');
 var russiaBlurb = document.getElementById("russiaBlurb");
 var turkish = document.getElementById("Turkish");
@@ -55,8 +20,10 @@ var avar = document.getElementById("Avar");
 var avarBlurb = document.getElementById("avarBlurb");
 var abkhaz = document.getElementById("Abkhaz");
 var abkhaziaBlurb = document.getElementById("abkhaziaBlurb");
+var kurd = document.getElementById("Kurd");
+var kurdBlurb = document.getElementById("kurdBlurb");
 
-var array = [[russian, russiaBlurb], [turkish, turkeyBlurb], [persian, iranBlurb], [azeri, azerBlurb], [georgian, georgiaBlurb], [armenian, armeniaBlurb], [chechen, chechnyaBlurb], [ossetian, ossetiaBlurb], [laz, lazBlurb], [avar, avarBlurb], [abkhaz, abkhaziaBlurb]]
+var array = [[russian, russiaBlurb], [turkish, turkeyBlurb], [persian, iranBlurb], [azeri, azerBlurb], [georgian, georgiaBlurb], [armenian, armeniaBlurb], [chechen, chechnyaBlurb], [ossetian, ossetiaBlurb], [laz, lazBlurb], [avar, avarBlurb], [abkhaz, abkhaziaBlurb], [kurd, kurdBlurb]]
 
 function iOn(i) {
   return function() {
