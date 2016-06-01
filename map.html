@@ -15,13 +15,35 @@
 </head>
 
 <body>
+  <!-- Define container for map; the given id will go into the container property of our map object-->
   <div id='map' style='width: 400px; height: 300px;'></div>
+  <div id='map2' style='width: 400px; height: 300px;'></div>
   <script>
+  // Define mapbox access token
   mapboxgl.accessToken = 'pk.eyJ1IjoibGl6emllZ29vZGluZyIsImEiOiJjaW92cmc1NHYwMWJsdW9tOHowdTA2cnFsIn0.lFq-Wju99kZ_dR_2TMBYCQ';
+  // Define new map object
+  // Call .Map method
   var map = new mapboxgl.Map({
+      // Define where to put map, based on html element with this id
       container: 'map',
+      // Define map style; can be made in mapbox studio or can use a given basemap
       style: 'mapbox://styles/lizziegooding/ciow0rloz002uasnhjvd4actj'
   });
+  // var tooltip = new mapboxgl.Popup()
+  // .setLngLat([-122.420679, 37.772537])
+  // .setHTML("<h1>Hello World!</h1>")
+  // .addTo(map);
+  var map2 = new mapboxgl.Map({
+    container: 'map2',
+    center: [-122.420679, 37.772537],
+    zoom: 13,
+    style: 'mapbox://styles/mapbox/outdoors-v9',
+    hash: true
+  });
+  var tooltip = new mapboxgl.Popup({closeOnClick: false})
+    .setLngLat([-122.420679, 37.772537])
+    .setHTML('<h1>Hello World!</h1>')
+    .addTo(map2);
 </script>
 
   <!-- div id="page" open
