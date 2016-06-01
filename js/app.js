@@ -31,3 +31,6 @@ function draw(countryNames, countryPop) {
 }
 
 draw(countryNames, countryPop);
+
+// User Feedback Local Storage
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
