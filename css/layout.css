@@ -91,6 +91,23 @@ footer a:hover {
   display: none;
 }
 
+/* Politics Page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#pol1 {
+  height: 150px;
+  background-color: #faf5e6;
+}
+
+#pol2 {
+  background-color: #574658;
+  padding: 5rem 5rem 10rem 5rem;
+  color: #faf5e6;
+}
+
+#pol3 {
+  background-color: #faf5e6;
+  padding: 10rem 0rem;
+}
 
 /* to be named/grouped
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
