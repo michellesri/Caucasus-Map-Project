@@ -1,12 +1,7 @@
-/* Fonts
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-/* Fixed Navigation Bar & Footer
+/* Navigation Bar - Fixed
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav {
   width: 100%;
-  color: #c8c8c8;
   background-color: #505150;
   position: fixed;
   z-index: 99;
@@ -15,34 +10,20 @@ nav {
 .logo {
   display:inline-block;
   padding: 10px;
-  color: #c8c8c8;
+  color: #faf5e6;
 }
 
 .nav {
   display:inline-block;
   padding: 10px 20px;
-  color: #c8c8c8;
-}
-
-.logo:hover,
-.nav:hover {
-  color: #edc16d;
+  /*color: #faf5e6;*/
 }
 
 footer {
   width: 100%;
-  color: #c8c8c8;
   background-color: #505150;
   text-align: center;
   padding: 2rem 0rem;
-}
-
-footer a {
-  color: #c8c8c8;
-}
-
-footer a:hover {
-  color: #edc16d;
 }
 
 /* Sections
@@ -51,35 +32,36 @@ footer a:hover {
 .sect2,
 .sect3 {
   width: 100%;
-  padding: 5rem 0rem;
+  padding: 10rem 0rem;
   background-color: #faf5e6;
 }
 
 .sect1 {
-  padding-top: 10rem;
+  padding-top: 8rem;
 }
 
 /* Landing Page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #home2 {
-  height: 150px;
+  height: 120px;
+  padding: 10rem;
   background-color: #574658;
 }
 
 #background {
   background-color: #faf5e6;
-  padding: 5rem 5rem 10rem 5rem;
 }
 
 #languages {
   background-color: #edc16d;
-  padding: 10rem 0rem;
 }
 
 #politics {
   background-color: #faf5e6;
-  padding: 10rem 5rem 5rem 5rem;
 }
+
+
+
 
 
 /* to be named/grouped
@@ -93,9 +75,10 @@ a {
   /*color: #edc16d*/
 }
 
-h1, {
+h1 {
   text-align: center;
 }
+
 
 
 /*verify against skeleton css - likely needs to be changed.*/

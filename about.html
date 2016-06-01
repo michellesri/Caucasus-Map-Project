@@ -1,54 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8"></meta>
+  <title>Atlas of the Caucasus</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" type="text/css" href="vendor/skeleton_css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="vendor/skeleton_css/skeleton.css">
   <link rel="stylesheet" type="text/css" href="css/layout.css">
   <link rel="stylesheet" type="text/css" href="css/animation.css">
-  <title>Atlas of the Caucasus</title>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- TODO: create and insert favicon -->
+
 </head>
 
 <body>
-  <!-- div id="page" open -->
-  <div id="page">
 
-  <header>
-    <div>
-      <p><a href="index.html">Atlas of the Caucasus</a></p>
-      <ul id="nav">
-        <li><a href="background.html">Background</a></li>
-        <li><a href="languages.html">Languages</a></li>
-        <li><a href="politics.html">Politics</a></li>
+  <!-- Navigation Bar
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<nav>
+  <div class="container">
+    <div class="row">
+      <div class="one-thirds.column u-pull-left">
+        <a class="logo" href="index.html">Atlas of the Caucasus</a>
+      </div>
+      <div class="two-thirds.column u-pull-right">
+        <a class="nav" href="background.html">Regional Background</a>
+        <a class="nav" href="languages.html">Languages</a>
+        <a class="nav" href="politics.html">Politics</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<section class="sect1" id="about1">
+  <div class="container">
+    <div class="row">
+      <h2>How the Atlas Came to Be</h2>
+      <p>The Atlas of the Caucasus is the capstone project of four students in the May 2015 session of <a href="http://codefellows.org">Code Fellows</a> Code 201 Boot Camp.</p>
+      <div class="three columns">
+        <ul>
+          <li>name here</li>
+          <li>name here</li>
+          <li>name here</li>
+          <li>name here</li>
+        </ul>
+      </div>
+      <div class="three.columns u-pull-left">
+        <img src="images/code-fellows-logo.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sect2" id="about2">
+  <div class="container">
+    <div class="row">
+      <h2>Sources</h2>
+      <ul>
+        <li>source 1 here</li>
+        <li>source 2 here</li>
+        <li>source 3 here, etc</li>
       </ul>
     </div>
-  </header>
+  </div>
+</section>
 
-  <section id="1about">
-    <div>
-      <p>About Title</p>
-      <P>About content (e.g., who we are / context for creating this app)</P>
+<!-- Section 3 Not Needed for About Page -->
+<!-- <section class="sect3" id="about3">
+  <div class="container">
+    <div class="row">
+      <p></p>
     </div>
-  </section>
-
-  <section id="2about">
-    <div>
-      <p>Soures</p>
-      <P>Source information content</P>
-    </div>
-  </section>
-
-  <section id="3about">
-    <div>
-      <p>Learn More</p>
-      <P>Compilation of external sites referenced in site where users can learn more.</P>
-    </div>
-  </section>
+  </div>
+</section> -->
 
   <footer>
-    <p>&copy; 2016 <a href="about.html">Team Atlas</a>, All Rights Reserved  |  <a href="about.html">Sources</a></p>
+    <div class="container"></div>
+      <div class="row">
+        <div class="twelve.columns">
+          <div>&copy; 2016 <a href="about.html">Team Atlas</a>, All Rights Reserved  |  <a href="about.html">Sources</a></div>
+        </div>
+      </div>
+    </div>
   </footer>
-
-  </div>
-  <!-- div id="page" close -->
+  <!-- End Document
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <script src="vendor/Chart.min.js"></script>
 <script src="js/app.js"></script>
