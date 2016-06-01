@@ -109,6 +109,13 @@ footer a:hover {
   padding: 10rem 0rem;
 }
 
+/* Background Page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#bgrd3 {
+  background-color: #ffffff;
+}
+
+
 /* to be named/grouped
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 body {
