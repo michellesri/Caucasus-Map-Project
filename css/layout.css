@@ -49,7 +49,8 @@ footer a:hover {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .sect1,
 .sect2,
-.sect3 {
+.sect3,
+.sect4 {
   width: 100%;
   padding: 5rem 0rem;
   background-color: #faf5e6;
@@ -81,14 +82,18 @@ footer a:hover {
   padding: 10rem 5rem 5rem 5rem;
 }
 
-/* Lang Page
+/* Languages Page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #lang2 {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .blurbs {
   display: none;
+}
+
+#lang4 {
+  background: #ffffff
 }
 
 /* Politics Page
@@ -129,10 +134,4 @@ a {
 
 h1, {
   text-align: center;
-}
-
-
-/*verify against skeleton css - likely needs to be changed.*/
-.bgrdInfo {
-  text-indent: 50px;
 }
