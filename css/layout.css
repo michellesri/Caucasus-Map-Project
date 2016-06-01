@@ -1,4 +1,4 @@
-/* Navigation Bar - Fixed
+/* Fixed Navigation Bar & Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav {
   width: 100%;
@@ -78,9 +78,6 @@ footer a:hover {
 }
 
 
-
-
-
 /* to be named/grouped
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 body {
@@ -95,7 +92,6 @@ a {
 h1 {
   text-align: center;
 }
-
 
 
 /*verify against skeleton css - likely needs to be changed.*/
