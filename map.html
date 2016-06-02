@@ -70,7 +70,9 @@ var layers = document.getElementById('menu-ui');
 
 var map = L.mapbox.map('map', 'lizziegooding.03nghnkf', {
   attributionControl: false,
-  infoControl: true
+  infoControl: true,
+  minZoom: 6,
+  maxZoom: 10
 });
 
 map.gridControl.options.follow = true;
