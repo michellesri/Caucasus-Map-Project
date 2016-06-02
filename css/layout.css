@@ -57,11 +57,24 @@ footer a:hover {
 }
 
 .sect1 {
-  padding-top: 10rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
 }
 
 /* Landing Page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+#video {
+  width: 100%;
+  z-index: -100;
+}
+
+#overlay {
+  position: absolute;
+  top: 10rem;
+  left: 0;
+}
+
+
 #home2 {
   height: 150px;
   background-color: #574658;
