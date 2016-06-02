@@ -24,14 +24,27 @@ var kurd = document.getElementById('Kurd');
 var kurdBlurb = document.getElementById('kurdBlurb');
 var legend = document.getElementById('legend');
 var russianHello = document.getElementById('russianHello');
-russianHello.play();
+var russianGoodbye = document.getElementById('russianGoodbye');
+var turkishHello = document.getElementById('turkishHello');
+var turkishGoodbye = document.getElementById('turkishGoodbye');
+var turkishBonVoyage = document.getElementById('turkishBonVoyage');
+var persianHello = document.getElementById('persianHello');
+var persianGoodbye = document.getElementById('persianGoodbye');
+var georgianHello = document.getElementById('georgianHello');
+var georgianGoodbye = document.getElementById('georgianGoodbye');
+var azerHello = document.getElementById('azerHello');
+var azerGoodbye = document.getElementById('azerGoodbye');
+var kurdishHello = document.getElementById('kurdishHello');
 
-var array = [[russian, russiaBlurb, []], [turkish, turkeyBlurb], [persian, iranBlurb], [azeri, azerBlurb], [georgian, georgiaBlurb], [armenian, armeniaBlurb], [chechen, chechnyaBlurb], [ossetian, ossetiaBlurb], [laz, lazBlurb], [avar, avarBlurb], [abkhaz, abkhaziaBlurb], [kurd, kurdBlurb]];
+var array = [[russian, russiaBlurb, [russianHello, russianGoodbye]], [turkish, turkeyBlurb, [turkishHello, turkishGoodbye, turkishBonVoyage]], [persian, iranBlurb, [persianHello, persianGoodbye]], [azeri, azerBlurb, [azerHello, azerGoodbye]], [georgian, georgiaBlurb, [georgianHello, georgianGoodbye]], [armenian, armeniaBlurb, []], [chechen, chechnyaBlurb, []], [ossetian, ossetiaBlurb, []], [laz, lazBlurb, []], [avar, avarBlurb, []], [abkhaz, abkhaziaBlurb, []], [kurd, kurdBlurb, [kurdishHello]]];
 
 function iOn(i) {
   return function() {
     array[i][1].style.display = 'block';
     legend.style.display = 'none';
+    for (var i = 0; i < array[i][2].length; i++) {
+      array[i][2][i].play();
+    }
   };
 }
 
