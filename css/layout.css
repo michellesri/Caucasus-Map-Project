@@ -200,6 +200,10 @@ footer a:hover {
   width: 71%;
 }
 
+svg {
+  border-radius: 10px;
+}
+
 /* Politics Page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #pol1 {
