@@ -22,7 +22,7 @@
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<!-- TODO: create and insert favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 
 </head>
 
@@ -50,12 +50,12 @@
 <section class="sect1" id="lang1">
   <div class="container">
     <div class="row">
-      <h2>Welcome! An Interactive Map</h2>
-      <p>Below, you may mouse over the map to learn more about the languages that are being used throughout the regions. As you mouse over, information will appear to the right of the map. At the bottom of each blurb, there are two phrases that have their phonetic pronunciation next to them. The first word means 'Hello' and the second one means 'Goodbye.' </p>
+      <h2 class="secondaryTitle">Linguistic Diversity</h2>
+      <p>Move your cursor over the map below to learn about the languages spoken throughout the Caucasian region. As you mouse over, information will appear to the right. Beneath each summary, you will also find two essential phrases together with their phonetic pronunciation.</p>
     </div>
-    <div>
+    <!-- <div>
       <button>Audio On/Off</button>
-    </div>
+    </div> -->
   </div>
 </section>
 
@@ -1056,6 +1056,7 @@
         </svg>
       </div>
       <div class="six columns"> <!-- text -->
+        <img id="legend" class="u-pull-right" src="images/legend.png">
         <div class="blurbs" id="russiaBlurb">
           <h3>Russian</h3>
           <p>Russian is a Slavic language spoken throughout the former Soviet Union. It belongs to the East Slavic branch of the Slavic language family, which is the largest in the Indo-European group. Though Russian once served as a lingua franca for many different nationalities within the USSR, it is being increasingly supplanted by English in this capacity.</p>
@@ -1147,29 +1148,31 @@
 
 <section class="sect4" id="lang4">
   <div class="container">
+    <h4>Tell us about your experience with the Caucasus!</h4>
+    <br />
     <form action="">
       <div class="row">
         <div class="six columns">
           <label for="countryInput">Country of Residence</label>
-          <input class="u-full-width" type="text" placeholder="United States" id="country">
+          <input class="u-full-width" type="text" placeholder="United States" id="uCountry">
         </div>
         <div class="six columns">
           <label for="languageInput">Native Language</label>
-          <input class="u-full-width" type="text" placeholder="English" id="language">
+          <input class="u-full-width" type="text" placeholder="English" id="uLanguage">
         </div>
       </div>
       <div class="row">
         <div class="six columns">
           <label for="visitedInput">Have you ever visited the Caucasus?</label>
-          <input type="radio" name="visited" value="yes"> Yes<br />
-          <input type="radio" name="visited" value="no"> No<br />
-          <input type="radio" name="visited" value="fromCaucasus"> I'm from the Caucasus<br />
+          <input type="radio" name="uVisited" value="yes"> Yes<br />
+          <input type="radio" name="uVisited" value="no"> No<br />
+          <input type="radio" name="uVisited" value="fromCaucasus"> I'm from the Caucasus<br />
         </div>
         <div class="six columns">
           <label for="languageInput">Do you speak any of the langauges spoken in the Caucasus?</label>
-          <input type="radio" name="speaks" value="yesNative"> Yes, I'm a native speaker<br />
-          <input type="radio" name="speaks" value="yesSecondary"> Yes, I studied a Caucasian language<br />
-          <input type="radio" name="speaks" value="no"> No<br />
+          <input type="radio" name="uSpeaks" value="yesNative"> Yes, I'm a native speaker<br />
+          <input type="radio" name="uSpeaks" value="yesSecondary"> Yes, I studied a Caucasian language<br />
+          <input type="radio" name="uSpeaks" value="no"> No<br />
         </div>
         <div class="row">
           <input class="button-primary" type="submit" id="langSubmit" value="Submit">
