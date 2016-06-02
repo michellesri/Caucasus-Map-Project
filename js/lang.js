@@ -23,8 +23,9 @@ var abkhaziaBlurb = document.getElementById('abkhaziaBlurb');
 var kurd = document.getElementById('Kurd');
 var kurdBlurb = document.getElementById('kurdBlurb');
 var legend = document.getElementById('legend');
+var audio = document.getElementById('audio');
 
-var array = [[russian, russiaBlurb], [turkish, turkeyBlurb], [persian, iranBlurb], [azeri, azerBlurb], [georgian, georgiaBlurb], [armenian, armeniaBlurb], [chechen, chechnyaBlurb], [ossetian, ossetiaBlurb], [laz, lazBlurb], [avar, avarBlurb], [abkhaz, abkhaziaBlurb], [kurd, kurdBlurb]];
+var array = [[russian, russiaBlurb, ['hello_russian.mp3', 'goodbye_russian.mp3']], [turkish, turkeyBlurb, ['hello_turkish.mp3', 'goodbye_turkish1.mp3', 'bonvoyage2_turkish.mp3']], [persian, iranBlurb, ['hello_farsi.mp3', 'goodbye_farsi.mp3']], [azeri, azerBlurb, ['hello_azer.mp3', 'goodbye_azer.mp3']], [georgian, georgiaBlurb, ['hello_georgian.mp3', 'goodbye_georgian.mp3']], [armenian, armeniaBlurb, []], [chechen, chechnyaBlurb, []], [ossetian, ossetiaBlurb, []], [laz, lazBlurb, []], [avar, avarBlurb, []], [abkhaz, abkhaziaBlurb, []], [kurd, kurdBlurb, ['hello_kurdish.mp3']]];
 
 function iOn(i) {
   return function() {
@@ -40,18 +41,48 @@ function iOff(i) {
   };
 }
 
-function mouseMovt() {
+var country;
+var audioIndex;
+
+function audioOn(i) {
+  return function() {
+    var audioArray = array[i][2];
+    if (audioArray.length < 1) {
+      return;
+    }
+    country = i;
+    audioIndex = 0;
+    audio.src = 'audio/' + audioArray[0];
+    audio.play();
+  };
+};
+
+audio.addEventListener('ended', playNext);
+
+function playNext() {
+  audioIndex++;
+  var audioArray = array[country][2];
+  if (audioIndex < audioArray.length) {
+    audio.src = 'audio/' + audioArray[audioIndex];
+    audio.play();
+  } else {
+    audio.pause();
+  }
+}
+
+function eventListeners() {
 
   for (var i = 0; i < array.length; i++) {
     var mouseOn = iOn(i);
     array[i][0].addEventListener('mouseover', mouseOn);
     var mouseOff = iOff(i);
     array[i][0].addEventListener('mouseout', mouseOff);
+    var audioSound = audioOn(i);
+    array[i][0].addEventListener('click', audioSound);
   }
 }
 
-mouseMovt();
-
+eventListeners();
 // Local Storage for User Language/Country information
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 //Connect app.js to the DOM

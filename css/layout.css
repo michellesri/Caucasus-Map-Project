@@ -201,6 +201,9 @@ footer a:hover {
   height: 497px;
 }
 
+#audio {
+  display: none;
+}
 /* Politics Page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #pol1 {
