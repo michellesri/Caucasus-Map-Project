@@ -39,6 +39,10 @@ h1, {
   text-shadow: 0.5px 0.5px #c8c8c8;
 }
 
+/*p {
+  text-align: justify;
+}*/
+
 /* TODO: Figure out what the problem is here*/
 /*button,
 .button {
@@ -98,7 +102,8 @@ footer a:hover {
 .sect1,
 .sect2,
 .sect3,
-.sect4 {
+.sect4,
+.sect5 {
   width: 100%;
   padding: 5rem 0rem;
   background-color: #faf5e6;
@@ -151,16 +156,11 @@ footer a:hover {
 #imgBgrd {
   background-image: url("/images/lpHistoricalRichness.jpg");
   box-shadow: 3px 3px #c8c8c8;
-  /*box-shadow: inset 0px 0px 10px 10px #faf5e6;*/
 }
 
 #imgLang {
   background-image: url("/images/lpLinguisticDiversity.jpg");
   box-shadow: -3px 3px #c8c8c8;
-
-  /*box-shadow: 0px 0px 5px 5px #505150;
-  box-shadow: inset 0px 0px 5px 5px #505150;*/
-
 }
 
 #imgPol {
@@ -171,15 +171,20 @@ footer a:hover {
 /* Languages Page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #lang2 {
+  background-color: #574658;
+  color: #faf5e6;
+}
+
+#lang3 {
   background-color: #ffffff;
+}
+
+#lang5 {
+  background: #ffffff
 }
 
 .blurbs {
   display: none;
-}
-
-#lang4 {
-  background: #ffffff
 }
 
 .bold {
@@ -198,24 +203,27 @@ footer a:hover {
 /* Politics Page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #pol1 {
-  /*height: 400px;*/
   background-color: #faf5e6;
 }
 
 #pol2 {
-  background-color: #fff;
-  padding: 5rem 5rem 10rem 5rem;
-}
-
-#pol3 {
   background-color: #574658;
-  padding: 10rem 0rem;
   color: #faf5e6;
 }
 
+#pol3 {
+  background-color: #fff;
+}
+
 #pol4 {
-  /*height: 400px;*/
   background-color: #faf5e6;
+}
+
+iframe {
+  width: 100%;
+  height: 535px;
+  border: 0px;
+  border-radius: 10px;
 }
 
 /* Background Page
