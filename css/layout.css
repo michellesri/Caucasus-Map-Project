@@ -104,6 +104,10 @@ footer a:hover {
 .pron {
   font-size: 1.5em;
 }
+
+#legend {
+  width: 71%;
+}
 /* Politics Page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #pol1 {
@@ -128,6 +132,12 @@ footer a:hover {
   background-color: #ffffff;
 }
 
+/* About Page
+__________________________________________________ */
+
+.italic {
+  font-style: italic;
+}
 
 /* to be named/grouped
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
