@@ -164,6 +164,9 @@ footer a:hover {
   width: 71%;
 }
 
+#audio {
+  display: none;
+}
 /* Politics Page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #pol1 {

@@ -23,8 +23,10 @@ var abkhaziaBlurb = document.getElementById('abkhaziaBlurb');
 var kurd = document.getElementById('Kurd');
 var kurdBlurb = document.getElementById('kurdBlurb');
 var legend = document.getElementById('legend');
+var russianHello = document.getElementById('russianHello');
+russianHello.play();
 
-var array = [[russian, russiaBlurb], [turkish, turkeyBlurb], [persian, iranBlurb], [azeri, azerBlurb], [georgian, georgiaBlurb], [armenian, armeniaBlurb], [chechen, chechnyaBlurb], [ossetian, ossetiaBlurb], [laz, lazBlurb], [avar, avarBlurb], [abkhaz, abkhaziaBlurb], [kurd, kurdBlurb]];
+var array = [[russian, russiaBlurb, []], [turkish, turkeyBlurb], [persian, iranBlurb], [azeri, azerBlurb], [georgian, georgiaBlurb], [armenian, armeniaBlurb], [chechen, chechnyaBlurb], [ossetian, ossetiaBlurb], [laz, lazBlurb], [avar, avarBlurb], [abkhaz, abkhaziaBlurb], [kurd, kurdBlurb]];
 
 function iOn(i) {
   return function() {
