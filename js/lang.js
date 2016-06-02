@@ -57,6 +57,19 @@ function audioOn(i) {
   };
 };
 
+audio.addEventListener('ended', playNext);
+
+function playNext() {
+  audioIndex++;
+  var audioArray = array[country][2];
+  if (audioIndex < audioArray.length) {
+    audio.src = 'audio/' + audioArray[audioIndex];
+    audio.play();
+  } else {
+    audio.pause();
+  }
+}
+
 function eventListeners() {
 
   for (var i = 0; i < array.length; i++) {
