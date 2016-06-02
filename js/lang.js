@@ -23,28 +23,14 @@ var abkhaziaBlurb = document.getElementById('abkhaziaBlurb');
 var kurd = document.getElementById('Kurd');
 var kurdBlurb = document.getElementById('kurdBlurb');
 var legend = document.getElementById('legend');
-var russianHello = document.getElementById('russianHello');
-var russianGoodbye = document.getElementById('russianGoodbye');
-var turkishHello = document.getElementById('turkishHello');
-var turkishGoodbye = document.getElementById('turkishGoodbye');
-var turkishBonVoyage = document.getElementById('turkishBonVoyage');
-var persianHello = document.getElementById('persianHello');
-var persianGoodbye = document.getElementById('persianGoodbye');
-var georgianHello = document.getElementById('georgianHello');
-var georgianGoodbye = document.getElementById('georgianGoodbye');
-var azerHello = document.getElementById('azerHello');
-var azerGoodbye = document.getElementById('azerGoodbye');
-var kurdishHello = document.getElementById('kurdishHello');
+var audio = document.getElementById('audio');
 
-var array = [[russian, russiaBlurb, [russianHello, russianGoodbye]], [turkish, turkeyBlurb, [turkishHello, turkishGoodbye, turkishBonVoyage]], [persian, iranBlurb, [persianHello, persianGoodbye]], [azeri, azerBlurb, [azerHello, azerGoodbye]], [georgian, georgiaBlurb, [georgianHello, georgianGoodbye]], [armenian, armeniaBlurb, []], [chechen, chechnyaBlurb, []], [ossetian, ossetiaBlurb, []], [laz, lazBlurb, []], [avar, avarBlurb, []], [abkhaz, abkhaziaBlurb, []], [kurd, kurdBlurb, [kurdishHello]]];
+var array = [[russian, russiaBlurb, ['hello_russian.mp3', 'goodbye_russian.mp3']], [turkish, turkeyBlurb, ['hello_turkish.mp3', 'goodbye_turkish1.mp3', 'bonvoyage2_turkish.mp3']], [persian, iranBlurb, ['hello_farsi.mp3', 'goodbye_farsi.mp3']], [azeri, azerBlurb, ['hello_azer.mp3', 'goodbye_azer.mp3']], [georgian, georgiaBlurb, ['hello_georgian.mp3', 'goodbye_georgian.mp3']], [armenian, armeniaBlurb, []], [chechen, chechnyaBlurb, []], [ossetian, ossetiaBlurb, []], [laz, lazBlurb, []], [avar, avarBlurb, []], [abkhaz, abkhaziaBlurb, []], [kurd, kurdBlurb, ['hello_kurdish.mp3']]];
 
 function iOn(i) {
   return function() {
     array[i][1].style.display = 'block';
     legend.style.display = 'none';
-    for (var i = 0; i < array[i][2].length; i++) {
-      array[i][2][i].play();
-    }
   };
 }
 
@@ -55,18 +41,35 @@ function iOff(i) {
   };
 }
 
-function mouseMovt() {
+var country;
+var audioIndex;
+
+function audioOn(i) {
+  return function() {
+    var audioArray = array[i][2];
+    if (audioArray.length < 1) {
+      return;
+    }
+    country = i;
+    audioIndex = 0;
+    audio.src = 'audio/' + audioArray[0];
+    audio.play();
+  };
+};
+
+function eventListeners() {
 
   for (var i = 0; i < array.length; i++) {
     var mouseOn = iOn(i);
     array[i][0].addEventListener('mouseover', mouseOn);
     var mouseOff = iOff(i);
     array[i][0].addEventListener('mouseout', mouseOff);
+    var audioSound = audioOn(i);
+    array[i][0].addEventListener('click', audioSound);
   }
 }
 
-mouseMovt();
-
+eventListeners();
 // Local Storage for User Language/Country information
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 //Connect app.js to the DOM
