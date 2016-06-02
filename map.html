@@ -68,7 +68,7 @@ L.mapbox.accessToken = 'pk.eyJ1IjoibGl6emllZ29vZGluZyIsImEiOiJjaW92cmc1NHYwMWJsd
 //Connect to the DOM where you've created your menu element
 var layers = document.getElementById('menu-ui');
 
-var map = L.mapbox.map('map', 'lizziegooding.dzszsme8', {
+var map = L.mapbox.map('map', 'lizziegooding.03nghnkf', {
   attributionControl: false,
   infoControl: true
 });
@@ -76,9 +76,9 @@ var map = L.mapbox.map('map', 'lizziegooding.dzszsme8', {
 map.gridControl.options.follow = true;
 
 //Create a tile and grid layers
-var gridLayer = L.mapbox.gridLayer('lizziegooding.dzszsme8');
+var gridLayer = L.mapbox.gridLayer('lizziegooding.03nghnkf');
 // addLayer(L.mapbox.tileLayer('mapbox://styles/lizziegooding/ciow0rloz002uasnhjvd4actj'), 'Basemap', 2); //Basemap
-addLayer(L.mapbox.tileLayer('lizziegooding.dzszsme8'), 'Ethnicities', -1); //95-100
+addLayer(L.mapbox.tileLayer('lizziegooding.03nghnkf'), 'Ethnicities', -1); //95-100
 L.tileLayer(
     'https://api.mapbox.com/styles/v1/lizziegooding/ciow0rloz002uasnhjvd4actj/tiles/{z}/{x}/{y}?access_token=' + L.mapbox.accessToken, {
     }).addTo(map);
