@@ -29,36 +29,24 @@ var array = [[russian, russiaBlurb], [turkish, turkeyBlurb], [persian, iranBlurb
 function iOn(i) {
   return function() {
     array[i][1].style.display = 'block';
+    legend.style.display = 'none';
   };
 }
 
 function iOff(i) {
   return function() {
     array[i][1].style.display = 'none';
+    legend.style.display = 'block';
   };
-}
-
-function legendOff() {
-  legend.style.display = 'none';
-}
-
-function legendOn() {
-  legend.style.display = 'block';
 }
 
 function mouseMovt() {
 
   for (var i = 0; i < array.length; i++) {
     var mouseOn = iOn(i);
-    array[i][0].addEventListener('mouseover', function() {
-      mouseOn();
-      legendOff();
-    });
+    array[i][0].addEventListener('mouseover', mouseOn);
     var mouseOff = iOff(i);
-    array[i][0].addEventListener('mouseout', function() {
-      mouseOff();
-      legendOn();
-    });
+    array[i][0].addEventListener('mouseout', mouseOff);
   }
 }
 
