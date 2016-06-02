@@ -62,9 +62,24 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoibGl6emllZ29vZGluZyIsImEiOiJjaW92cmc1NHYwMWJsdW9tOHowdTA2cnFsIn0.lFq-Wju99kZ_dR_2TMBYCQ';
 var map = L.mapbox.map('map').setView([44.165,42.6340], 5);
 var layers = document.getElementById('menu-ui');
-
+var gridLayer = L.mapbox.gridLayer('lizziegooding.dzszsme8');
 addLayer(L.mapbox.tileLayer('mapbox.light'), 'Basemap', 1); //Basemap
 addLayer(L.mapbox.tileLayer('lizziegooding.dzszsme8'), 'Ethnicities', 2); //95-100
+map.addLayer(gridLayer);
+map.addControl(L.mapbox.gridControl(gridLayer));
+// var grid = L.mapbox.gridLayer('lizziegooding.dzszsme8');
+// grid.gridLayer.on('click', function(e) {
+//     if (e.data && e.data.url) {
+//         window.open(e.data.url);
+//     }
+// });
+
+
+
+// map.addLayer(L.mapbox.tileLayer('examples.map-8ced9urs'));
+// map.addLayer(gridLayer);
+// map.addControl(L.mapbox.gridControl(gridLayer));
+
 // addLayer(L.mapbox.tileLayer('econw.m6543n1j'), '80-100%', 3);//80-100%
 // addLayer(L.mapbox.tileLayer('econw.m65416e4'), '61-80%', 4); //61-80%
 // addLayer(L.mapbox.tileLayer('econw.m653bpja'), '41-60%', 5); //41-60%
