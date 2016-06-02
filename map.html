@@ -16,44 +16,6 @@
 
 <style>
 /*Background menu; will be shown when layers are not active*/
-.menu-ui {
-  background:#fff; /*white; inactive button color*/
-  position:absolute;
-  top:10px;right:10px;
-  z-index:1;
-  border-radius:3px;
-  width:80px;
-  border:1px solid rgba(0,0,0,0.4); /*black; outside menu border*/
-  }
-  .menu-ui a {
-    font-size:12px;
-    color:#404040; /*dark gray; inactive text color*/
-    display:block;
-    margin:0;padding:0;
-    padding:5px;
-    text-decoration:none;
-    border-bottom:1px solid rgba(0,0,0,0.25); /*black; internal menu border*/
-    text-align:center;
-    font-family: 'Raleway'
-    }
-    .menu-ui a:first-child {
-      border-radius:3px 3px 0 0;
-      }
-    .menu-ui a:last-child {
-      border:none;
-      border-radius:0 0 3px 3px;
-      }
-    .menu-ui a:hover {
-      background:#f8f8f8; /*off-white; inactive button fill*/
-      color:#404040; /*dark gray; inactive hover text color*/
-      }
-    .menu-ui a.active {
-      background:#A60F14; /*red; active button fill*/
-      color:#FFF; /*white; active text fill*/
-      }
-      .menu-ui a.active:hover {
-        background:#3074a4; /*blue; active hover button fill*/
-        }
 </style>
 <nav id='menu-ui' class='menu-ui'></nav>
 <div id='map'></div>
@@ -80,7 +42,7 @@ map.gridControl.options.follow = true;
 //Create a tile and grid layers
 var gridLayer = L.mapbox.gridLayer('lizziegooding.03nghnkf');
 // addLayer(L.mapbox.tileLayer('mapbox://styles/lizziegooding/ciow0rloz002uasnhjvd4actj'), 'Basemap', 2); //Basemap
-addLayer(L.mapbox.tileLayer('lizziegooding.03nghnkf'), 'Ethnicities', -1); //95-100
+L.mapbox.tileLayer('lizziegooding.03nghnkf').addTo(map); //95-100
 L.tileLayer(
     'https://api.mapbox.com/styles/v1/lizziegooding/ciow0rloz002uasnhjvd4actj/tiles/{z}/{x}/{y}?access_token=' + L.mapbox.accessToken, {
     }).addTo(map);
