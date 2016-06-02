@@ -1,8 +1,56 @@
 /* Fonts
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+/*font-family: 'Raleway', sans-serif;*/
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+/*font-family: 'Kaushan Script', cursive;*/
 
 
-/* Fixed Navigation Bar & Footer
+/* General Style Properties
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+  background-color: #505150;
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  color: #72844d;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #574658;
+  text-decoration: none;
+}
+
+h1, {
+  text-align: center;
+}
+
+.mainTitle {
+  font-family: 'Kaushan Script', cursive;
+  color: #72844d;
+  text-shadow: 0.5px 0.5px #c8c8c8;
+  font-size: 8rem;
+}
+
+.secondaryTitle {
+  color: #72844d;
+  text-shadow: 0.5px 0.5px #c8c8c8;
+}
+
+/* TODO: Figure out what the problem is here*/
+/*button,
+.button {
+  color: #574658;
+}
+
+button.button-primary,
+.button.button-primary {
+  color: #574658;
+}*/
+
+/* Navigation Bar & Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav {
   width: 100%;
@@ -73,6 +121,7 @@ footer a:hover {
 }
 
 #overlay {
+  width: 100%;
   position: absolute;
   top: 10rem;
   left: 0;
@@ -114,6 +163,7 @@ footer a:hover {
 #legend {
   width: 71%;
 }
+
 /* Politics Page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #pol1 {
@@ -143,24 +193,4 @@ __________________________________________________ */
 
 .italic {
   font-style: italic;
-}
-
-/* General Style Properties
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-body {
-  background-color: #505150;
-}
-
-a {
-  color: #574658;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #edc16d;
-  text-decoration: none;
-}
-
-h1, {
-  text-align: center;
 }
