@@ -37,3 +37,8 @@ The site opens with a full screen HTML5 video, signaling the regions dramatic hi
 Core to our design goals, two interactive maps leverage CSS animation, JavaScript, and audio to create a visually compelling user interface.
 
 The finished product allows users to understand the geography, language and pronunciation all in a single element.
+
+### Technical Requirements ###
+
+A complete list of the project's technical requirements can be found in the Project Week Guide:
+<https://github.com/codefellows/portland-201d3/blob/master/ProjectWeekGuide.md>
