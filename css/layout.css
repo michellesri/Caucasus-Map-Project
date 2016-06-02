@@ -238,3 +238,20 @@ __________________________________________________ */
 .italic {
   font-style: italic;
 }
+
+#cfLogo {
+  width:70px;
+  height: 75px;
+  -webkit-animation: fadeinout 4s linear forwards;
+  animation: fadeinout 4s infinite;
+}
+
+@-webkit-keyframes fadeinout {
+0%,100% { opacity: 0; }
+50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+0%,100% { opacity: 0; }
+50% { opacity: 1; }
+}
