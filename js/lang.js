@@ -177,11 +177,11 @@ function draw(countryNames, speakersInWorld) {
       datasets: [{
         label: 'Speakers in the World',
         // backgroundColor: 'rgba(255,99,132,0.2)',
-        backgroundColor: 'rgba(188, 71, 39, 0.4)',
-        borderColor: 'rgba(188, 71, 39,0.7)',
+        backgroundColor: 'rgba(87,70,88,0.4)',
+        borderColor: 'rgba(87,70,88,0.7)',
         borderWidth: 1,
-        hoverBackgroundColor: 'rgba(188, 71, 39,0.7)',
-        hoverBorderColor: 'rgba(255,99,132,1)',
+        hoverBackgroundColor: 'rgba(87,70,88,0.7)',
+        hoverBorderColor: 'rgba(87,70,88,1)',
         data: speakersInWorld,
       }]
     },
