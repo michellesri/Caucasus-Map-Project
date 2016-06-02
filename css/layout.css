@@ -34,6 +34,21 @@ h1, {
   font-size: 8rem;
 }
 
+.secondaryTitle {
+  color: #72844d;
+  text-shadow: 0.5px 0.5px #c8c8c8;
+}
+
+/* TODO: Figure out what the problem is here*/
+/*button,
+.button {
+  color: #574658;
+}
+
+button.button-primary,
+.button.button-primary {
+  color: #574658;
+}*/
 
 /* Navigation Bar & Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
