@@ -192,7 +192,8 @@ footer a:hover {
 }
 
 #legend {
-  width: 71%;
+  /*width: 60%;*/
+  height: 497px;
 }
 
 /* Politics Page
