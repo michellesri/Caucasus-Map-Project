@@ -151,16 +151,11 @@ footer a:hover {
 #imgBgrd {
   background-image: url("/images/lpHistoricalRichness.jpg");
   box-shadow: 3px 3px #c8c8c8;
-  /*box-shadow: inset 0px 0px 10px 10px #faf5e6;*/
 }
 
 #imgLang {
   background-image: url("/images/lpLinguisticDiversity.jpg");
   box-shadow: -3px 3px #c8c8c8;
-
-  /*box-shadow: 0px 0px 5px 5px #505150;
-  box-shadow: inset 0px 0px 5px 5px #505150;*/
-
 }
 
 #imgPol {
