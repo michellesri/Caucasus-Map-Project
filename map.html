@@ -12,76 +12,10 @@
 </style>
 </head>
 <body>
-
-
-<style>
-/*Background menu; will be shown when layers are not active*/
-</style>
-<nav id='menu-ui' class='menu-ui'></nav>
+<style></style>
 <div id='map'></div>
 
-<script>
-//Access Mapbox API
-L.mapbox.accessToken = 'pk.eyJ1IjoibGl6emllZ29vZGluZyIsImEiOiJjaW92cmc1NHYwMWJsdW9tOHowdTA2cnFsIn0.lFq-Wju99kZ_dR_2TMBYCQ';
-
-//Create new map object, set its initial center and zoom level
-// var map = L.mapbox.map('map').setView([44.165,42.6340], 5);
-
-//Connect to the DOM where you've created your menu element
-var layers = document.getElementById('menu-ui');
-
-var map = L.mapbox.map('map', 'lizziegooding.03nghnkf', {
-  attributionControl: false,
-  infoControl: true,
-  minZoom: 6,
-  maxZoom: 10
-});
-
-map.gridControl.options.follow = true;
-
-//Create a tile and grid layers
-var gridLayer = L.mapbox.gridLayer('lizziegooding.03nghnkf');
-// addLayer(L.mapbox.tileLayer('mapbox://styles/lizziegooding/ciow0rloz002uasnhjvd4actj'), 'Basemap', 2); //Basemap
-L.mapbox.tileLayer('lizziegooding.03nghnkf').addTo(map); //95-100
-L.tileLayer(
-    'https://api.mapbox.com/styles/v1/lizziegooding/ciow0rloz002uasnhjvd4actj/tiles/{z}/{x}/{y}?access_token=' + L.mapbox.accessToken, {
-    }).addTo(map);
-
-//Add grid layer to map (don't want it to be togglable)
-// map.addLayer(gridLayer);
-//Add grid control (tool tips) to map
-// map.addControl(L.mapbox.gridControl(gridLayer));
-// map.gridControl.options.follow = true;
-
-//Make menu buttons interactive-- drawn from Mapbox tutorial
-function addLayer(layer, name, zIndex) {
-    layer
-        .setZIndex(zIndex)
-        .addTo(map);
-
-    // Create a simple layer switcher that
-    // toggles layers on and off.
-    var link = document.createElement('a');
-        link.href = '#';
-        link.className = 'active';
-        link.innerHTML = name;
-
-    link.onclick = function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-
-        if (map.hasLayer(layer)) {
-            map.removeLayer(layer);
-            this.className = '';
-        } else {
-            map.addLayer(layer);
-            this.className = 'active';
-        }
-    };
-    layers.appendChild(link);
-}
-</script>
-
+<script src="js/map.js"></script>
 
 </body>
 </html>
