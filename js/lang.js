@@ -145,10 +145,11 @@ function draw(countryNames, speakersInWorld) {
       labels: countryNames,
       datasets: [{
         label: 'Speakers in the World',
-        backgroundColor: 'rgba(255,99,132,0.2)',
-        borderColor: 'rgba(255,99,132,1)',
+        // backgroundColor: 'rgba(255,99,132,0.2)',
+        backgroundColor: 'rgba(188, 71, 39, 0.4)',
+        borderColor: 'rgba(188, 71, 39,0.7)',
         borderWidth: 1,
-        hoverBackgroundColor: 'rgba(255,99,132,0.4)',
+        hoverBackgroundColor: 'rgba(188, 71, 39,0.7)',
         hoverBorderColor: 'rgba(255,99,132,1)',
         data: speakersInWorld,
       }]
