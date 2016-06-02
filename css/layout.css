@@ -62,24 +62,30 @@ footer a:hover {
 
 /* Landing Page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-#home2 {
-  height: 150px;
-  background-color: #574658;
+#home1 {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
 }
 
-#background {
-  background-color: #faf5e6;
-  padding: 5rem 5rem 10rem 5rem;
+#video {
+  width: 100%;
+  z-index: -100;
 }
 
-#languages {
-  background-color: #edc16d;
+#overlay {
+  position: absolute;
+  top: 10rem;
+  left: 0;
+}
+
+#home2,
+#home3,
+#home4 {
   padding: 10rem 0rem;
 }
 
-#politics {
-  background-color: #faf5e6;
-  padding: 10rem 5rem 5rem 5rem;
+#home3 {
+  background-color: #edc16d;
 }
 
 /* Languages Page
@@ -139,15 +145,20 @@ __________________________________________________ */
   font-style: italic;
 }
 
-/* to be named/grouped
+/* General Style Properties
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 body {
   background-color: #505150;
 }
 
 a {
+  color: #574658;
   text-decoration: none;
-  /*color: #edc16d*/
+}
+
+a:hover {
+  color: #edc16d;
+  text-decoration: none;
 }
 
 h1, {
