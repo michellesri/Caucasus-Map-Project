@@ -23,10 +23,6 @@ a:hover {
   text-decoration: none;
 }
 
-h1, {
-  text-align: center;
-}
-
 .mainTitle {
   font-family: 'Kaushan Script', cursive;
   color: #72844d;
@@ -99,7 +95,7 @@ footer a:hover {
 .sect4,
 .sect5 {
   width: 100%;
-  padding: 10rem 0rem;
+  padding: 10rem 0rem 5rem 0rem;
   background-color: #faf5e6;
 }
 
@@ -143,9 +139,7 @@ footer a:hover {
   height: 250px;
   background-size: cover;
   background-position: center;
-  box-shadow: 3px 3px #c8c8c8;
-  box-shadow: 3px 3px #c8c8c8;
-  border-radius: 10px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   z-index: 100;
 }
 
@@ -167,7 +161,6 @@ footer a:hover {
   background-color: #574658;
   color: #faf5e6;
   padding: 5rem 0rem;
-
 }
 
 #lang3 {
