@@ -144,15 +144,15 @@ footer a:hover {
 }
 
 #imgBgrd {
-  background-image: url("/images/lpHistoricalRichness.jpg");
+  background-image: url("../images/lpHistoricalRichness.jpg");
 }
 
 #imgLang {
-  background-image: url("/images/lpLinguisticDiversity.jpg");
+  background-image: url("../images/lpLinguisticDiversity.jpg");
 }
 
 #imgPol {
-  background-image: url("/images/lpInvisibleBorders.jpg");
+  background-image: url("../images/lpInvisibleBorders.jpg");
 }
 
 /* Background Page
