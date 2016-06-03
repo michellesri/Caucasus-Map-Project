@@ -27,6 +27,7 @@ var audio = document.getElementById('audio');
 
 var array = [[russian, russiaBlurb, ['hello_russian.mp3', 'goodbye_russian.mp3']], [turkish, turkeyBlurb, ['hello_turkish.mp3', 'goodbye_turkish1.mp3', 'bonvoyage2_turkish.mp3']], [persian, iranBlurb, ['hello_farsi.mp3', 'goodbye_farsi.mp3']], [azeri, azerBlurb, ['hello_azer.mp3', 'goodbye_azer.mp3']], [georgian, georgiaBlurb, ['hello_georgian.mp3', 'goodbye_georgian.mp3']], [armenian, armeniaBlurb, []], [chechen, chechnyaBlurb, []], [ossetian, ossetiaBlurb, []], [laz, lazBlurb, []], [avar, avarBlurb, []], [abkhaz, abkhaziaBlurb, []], [kurd, kurdBlurb, ['hello_kurdish.mp3']]];
 
+//extracts i to put into event listener; replaces legend with blurb
 function iOn(i) {
   return function() {
     array[i][1].style.display = 'block';
@@ -34,6 +35,7 @@ function iOn(i) {
   };
 }
 
+//extracts i to put into event listener; replaces blurb with legend
 function iOff(i) {
   return function() {
     array[i][1].style.display = 'none';
@@ -44,6 +46,7 @@ function iOff(i) {
 var country;
 var audioIndex;
 
+//extracts i for event listener; attaches audio to correct map element; plays first audio
 function audioOn(i) {
   return function() {
     var audioArray = array[i][2];
@@ -57,6 +60,7 @@ function audioOn(i) {
   };
 };
 
+//plays next audio
 audio.addEventListener('ended', playNext);
 
 function playNext() {
@@ -70,6 +74,7 @@ function playNext() {
   }
 }
 
+//controls map interactions
 function eventListeners() {
 
   for (var i = 0; i < array.length; i++) {
@@ -83,43 +88,47 @@ function eventListeners() {
 }
 
 eventListeners();
+
 // Local Storage for User Language/Country information
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-//Connect app.js to the DOM
+//Connect lang.js to the DOM
 var uCountry = document.getElementById('uCountry');
 var uLanguage = document.getElementById('uLanguage');
 var uVisited = document.getElementsByName('uVisited');
 var uSpeaks = document.getElementsByName('uSpeaks');
 var langSubmit = document.getElementById('langSubmit');
 
-//check to see if local storage exists
+//Check to see if local storage exists
 var checkLocalStorage = localStorage.userLang;
 if (!checkLocalStorage) {
+  //If local storage doesn't exist
   console.log('No local storage');
 }
 else{
-  //pull data out of local storage and reassign to form
+  //If local storage does exist, pull data out of local storage and reassign to form
   console.log('Local storage found');
   var userLangBack = JSON.parse(localStorage.userLang);
   uCountry.value = userLangBack.uCountry;
   uLanguage.value = userLangBack.uLanguage;
+  //RADIO BUTTONS
+  //Check to see which value of the uVisited array matches with that stored in local storage
   for (var xx = 0; xx < uVisited.length; xx++){
     if(uVisited[xx].value === userLangBack.uVisited){
       uVisited[xx].checked = true;
     }
   }
+  //Check to see which value of the uSpeaks array matches with that stored in local storagE
   for (var yy = 0; yy < uSpeaks.length; yy++){
     if(uSpeaks[yy].value === userLangBack.uSpeaks){
       uSpeaks[yy].checked = true;
     }
   }
-  // uSpeaks.value = userLangBack.uSpeaks;
 }
 
 //Create event listener
 langSubmit.addEventListener('click', writeLangInput);
 
-//write function that stores lang/country information
+//Gather radio button responses, call object constructor, write object with user data to local storage
 function writeLangInput(event){
   event.preventDefault();
   var visit = '';
@@ -141,7 +150,7 @@ function writeLangInput(event){
   localStorage.userLang = JSON.stringify(user);
 }
 
-//create an object constructor to store lang/country information
+//Create an object constructor to store lang/country information
 function userLang (uCountry, uLanguage, visit, speaks){
   this.uCountry = uCountry;
   this.uLanguage = uLanguage;
@@ -149,7 +158,8 @@ function userLang (uCountry, uLanguage, visit, speaks){
   this.uSpeaks = speaks;
 }
 
-// uVisited, uSpeaks uVisited.value, uSpeaks.value
+// Write Language chart
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 var canvas = document.getElementById('canvas');
 
