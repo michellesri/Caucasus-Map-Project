@@ -27,6 +27,7 @@ var audio = document.getElementById('audio');
 
 var array = [[russian, russiaBlurb, ['hello_russian.mp3', 'goodbye_russian.mp3']], [turkish, turkeyBlurb, ['hello_turkish.mp3', 'goodbye_turkish1.mp3', 'bonvoyage2_turkish.mp3']], [persian, iranBlurb, ['hello_farsi.mp3', 'goodbye_farsi.mp3']], [azeri, azerBlurb, ['hello_azer.mp3', 'goodbye_azer.mp3']], [georgian, georgiaBlurb, ['hello_georgian.mp3', 'goodbye_georgian.mp3']], [armenian, armeniaBlurb, []], [chechen, chechnyaBlurb, []], [ossetian, ossetiaBlurb, []], [laz, lazBlurb, []], [avar, avarBlurb, []], [abkhaz, abkhaziaBlurb, []], [kurd, kurdBlurb, ['hello_kurdish.mp3']]];
 
+//extracts i to put into event listener; replaces legend with blurb
 function iOn(i) {
   return function() {
     array[i][1].style.display = 'block';
@@ -34,6 +35,7 @@ function iOn(i) {
   };
 }
 
+//extracts i to put into event listener; replaces blurb with legend
 function iOff(i) {
   return function() {
     array[i][1].style.display = 'none';
@@ -44,6 +46,7 @@ function iOff(i) {
 var country;
 var audioIndex;
 
+//extracts i for event listener; attaches audio to correct map element; plays first audio
 function audioOn(i) {
   return function() {
     var audioArray = array[i][2];
@@ -57,6 +60,7 @@ function audioOn(i) {
   };
 };
 
+//plays next audio
 audio.addEventListener('ended', playNext);
 
 function playNext() {
@@ -70,6 +74,7 @@ function playNext() {
   }
 }
 
+//controls map interactions
 function eventListeners() {
 
   for (var i = 0; i < array.length; i++) {
