@@ -258,20 +258,6 @@ iframe {
 /* About Page
 __________________________________________________ */
 
-.italic {
-  font-style: italic;
-}
-
-#cfLogo {
-  width:70px;
-  height: 75px;
-  animation: fadeinout 4s infinite;
-}
-
-#mountain-logo {
-  height: 200px;
-}
-
 @-webkit-keyframes fadeinout {
 0%,100% { opacity: 0; }
 50% { opacity: 1; }
@@ -280,14 +266,6 @@ __________________________________________________ */
 @keyframes fadeinout {
 0%,100% { opacity: 0; }
 50% { opacity: 1; }
-}
-
-#bike {
-  /*width: 200px;
-  height: 200px;*/
-  /*margin: 10px;*/
-  animation-duration: 3s;
-  animation-name: slidein;
 }
 
 @keyframes slidein {
@@ -300,4 +278,23 @@ __________________________________________________ */
     width: 100%;
     visibility: hidden;
   }
+}
+
+#about2 {
+  padding: 0rem 0rem;
+}
+
+#cfLogo {
+  width:70px;
+  height: 75px;
+  animation: fadeinout 4s infinite;
+}
+
+#mountain-logo {
+  height: 200px;
+}
+
+#bike {
+  animation-duration: 3s;
+  animation-name: slidein;
 }
