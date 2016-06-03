@@ -199,11 +199,16 @@ footer a:hover {
 }
 
 #legend {
-  width: 71%;
+  /*width: 60%;*/
+  height: 497px;
 }
 
 svg {
   border-radius: 10px;
+}
+
+#audio {
+  display: none;
 }
 
 /* Politics Page
@@ -244,4 +249,20 @@ __________________________________________________ */
 
 .italic {
   font-style: italic;
+}
+
+#cfLogo {
+  width:70px;
+  height: 75px;
+  animation: fadeinout 4s infinite;
+}
+
+@-webkit-keyframes fadeinout {
+0%,100% { opacity: 0; }
+50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+0%,100% { opacity: 0; }
+50% { opacity: 1; }
 }
