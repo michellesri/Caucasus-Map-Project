@@ -144,15 +144,50 @@ footer a:hover {
 }
 
 #imgBgrd {
-  background-image: url("/images/lpHistoricalRichness.jpg");
+  background-image: url("../images/lpHistoricalRichness.jpg");
 }
 
 #imgLang {
-  background-image: url("/images/lpLinguisticDiversity.jpg");
+  background-image: url("../images/lpLinguisticDiversity.jpg");
 }
 
 #imgPol {
-  background-image: url("/images/lpInvisibleBorders.jpg");
+  background-image: url("../images/lpInvisibleBorders.jpg");
+}
+
+/* Background Page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#bgrd1 {
+  padding: 10rem 0rem 3rem 0rem;
+}
+
+#bgrd2 {
+  padding: 5rem 0rem 4rem 0rem;
+
+  background-color: #574658;
+  /*text-align: center;*/
+  color: #faf5e6
+}
+
+#bgrd3 {
+  padding: 5rem 0rem 5rem 0rem;
+}
+
+#bgrd4 {
+  background-color: #ffffff;
+}
+
+#qTitle {
+  font-family: 'Kaushan Script', cursive;
+  color: #72844d;
+  text-shadow: 0.2px 0.2px #c8c8c8;
+  font-size: 5rem;
+}
+
+#qAuthor {
+  text-align: center;
+  color: #72844d;
+  text-shadow: 0.2px 0.2px #c8c8c8;
 }
 
 /* Languages Page
@@ -218,12 +253,6 @@ iframe {
   height: 535px;
   border: 0px;
   border-radius: 10px;
-}
-
-/* Background Page
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-#bgrd3 {
-  background-color: #ffffff;
 }
 
 /* About Page
