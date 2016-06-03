@@ -153,7 +153,7 @@ function userLang (uCountry, uLanguage, visit, speaks){
 
 var canvas = document.getElementById('canvas');
 
-var countryNames = ['Russia', 'Turkey', 'Iran', 'Georgia', 'Armenia', 'Azerbaijan'];
+var langNames = ['Russian', 'Turkish', 'Persian', 'Georgian', 'Armenian', 'Azerbaijani'];
 
  // the number of speakers in the world is in the millions and corresponds to the order of the country names
  // notes about the data (found on wikipedia.com):
@@ -165,17 +165,17 @@ var countryNames = ['Russia', 'Turkey', 'Iran', 'Georgia', 'Armenia', 'Azerbaija
  // Armenia: 812mil total
  // azerbaijan: 26mil total
 
-var speakersInWorld = ['260000000', '71000000', '110000000', '4300000', '12000000', '26000000'];
+var speakersInWorld = ['260', '71', '110', '4.3', '12', '26'];
 
-function draw(countryNames, speakersInWorld) {
+function draw(langNames, speakersInWorld) {
 
   canvas.style.display = 'block';
   var myChart = new Chart(canvas, {
     type: 'bar',
     data: {
-      labels: countryNames,
+      labels: langNames,
       datasets: [{
-        label: 'Speakers in the World',
+        label: 'Speakers in the World (millions)',
         // backgroundColor: 'rgba(255,99,132,0.2)',
         backgroundColor: 'rgba(87,70,88,0.4)',
         borderColor: 'rgba(87,70,88,0.7)',
@@ -195,4 +195,4 @@ function draw(countryNames, speakersInWorld) {
   });
 }
 
-draw(countryNames, speakersInWorld);
+draw(langNames, speakersInWorld);
