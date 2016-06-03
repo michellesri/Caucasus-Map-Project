@@ -257,6 +257,10 @@ __________________________________________________ */
   animation: fadeinout 4s infinite;
 }
 
+#mountain-logo {
+  height: 200px;
+}
+
 @-webkit-keyframes fadeinout {
 0%,100% { opacity: 0; }
 50% { opacity: 1; }
@@ -265,4 +269,24 @@ __________________________________________________ */
 @keyframes fadeinout {
 0%,100% { opacity: 0; }
 50% { opacity: 1; }
+}
+
+#bike {
+  /*width: 200px;
+  height: 200px;*/
+  /*margin: 10px;*/
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: 70%;
+    width: 300%;
+  }
+  100% {
+    margin-left: 0%;
+    width: 100%;
+    visibility: hidden;
+  }
 }
