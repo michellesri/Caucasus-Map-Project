@@ -83,43 +83,47 @@ function eventListeners() {
 }
 
 eventListeners();
+
 // Local Storage for User Language/Country information
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-//Connect app.js to the DOM
+//Connect lang.js to the DOM
 var uCountry = document.getElementById('uCountry');
 var uLanguage = document.getElementById('uLanguage');
 var uVisited = document.getElementsByName('uVisited');
 var uSpeaks = document.getElementsByName('uSpeaks');
 var langSubmit = document.getElementById('langSubmit');
 
-//check to see if local storage exists
+//Check to see if local storage exists
 var checkLocalStorage = localStorage.userLang;
 if (!checkLocalStorage) {
+  //If local storage doesn't exist
   console.log('No local storage');
 }
 else{
-  //pull data out of local storage and reassign to form
+  //If local storage does exist, pull data out of local storage and reassign to form
   console.log('Local storage found');
   var userLangBack = JSON.parse(localStorage.userLang);
   uCountry.value = userLangBack.uCountry;
   uLanguage.value = userLangBack.uLanguage;
+  //RADIO BUTTONS
+  //Check to see which value of the uVisited array matches with that stored in local storage
   for (var xx = 0; xx < uVisited.length; xx++){
     if(uVisited[xx].value === userLangBack.uVisited){
       uVisited[xx].checked = true;
     }
   }
+  //Check to see which value of the uSpeaks array matches with that stored in local storagE
   for (var yy = 0; yy < uSpeaks.length; yy++){
     if(uSpeaks[yy].value === userLangBack.uSpeaks){
       uSpeaks[yy].checked = true;
     }
   }
-  // uSpeaks.value = userLangBack.uSpeaks;
 }
 
 //Create event listener
 langSubmit.addEventListener('click', writeLangInput);
 
-//write function that stores lang/country information
+//Gather radio button responses, call object constructor, write object with user data to local storage
 function writeLangInput(event){
   event.preventDefault();
   var visit = '';
@@ -141,7 +145,7 @@ function writeLangInput(event){
   localStorage.userLang = JSON.stringify(user);
 }
 
-//create an object constructor to store lang/country information
+//Create an object constructor to store lang/country information
 function userLang (uCountry, uLanguage, visit, speaks){
   this.uCountry = uCountry;
   this.uLanguage = uLanguage;
@@ -149,7 +153,8 @@ function userLang (uCountry, uLanguage, visit, speaks){
   this.uSpeaks = speaks;
 }
 
-// uVisited, uSpeaks uVisited.value, uSpeaks.value
+// Write Language chart
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 var canvas = document.getElementById('canvas');
 
