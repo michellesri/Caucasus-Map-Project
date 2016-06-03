@@ -39,19 +39,9 @@ h1, {
   text-shadow: 0.5px 0.5px #c8c8c8;
 }
 
-/*p {
-  text-align: justify;
-}*/
-
-/* TODO: Figure out what the problem is here*/
-button,
-.button {
-  color: #72844d;
-}
-
-button.button-primary,
-.button.button-primary {
-  color: #72844d;
+#pointer {
+  width: 30px;
+  height: 30px;
 }
 
 /* Navigation Bar & Footer
@@ -68,6 +58,10 @@ nav {
   display:inline-block;
   padding: 10px;
   color: #c8c8c8;
+}
+
+#logo {
+  width: 40px;
 }
 
 .nav {
@@ -149,23 +143,22 @@ footer a:hover {
   height: 250px;
   background-size: cover;
   background-position: center;
+  box-shadow: 3px 3px #c8c8c8;
+  box-shadow: 3px 3px #c8c8c8;
   border-radius: 10px;
   z-index: 100;
 }
 
 #imgBgrd {
   background-image: url("/images/lpHistoricalRichness.jpg");
-  box-shadow: 3px 3px #c8c8c8;
 }
 
 #imgLang {
   background-image: url("/images/lpLinguisticDiversity.jpg");
-  box-shadow: -3px 3px #c8c8c8;
 }
 
 #imgPol {
   background-image: url("/images/lpInvisibleBorders.jpg");
-  box-shadow: 3px 3px #c8c8c8;
 }
 
 /* Languages Page
@@ -201,10 +194,6 @@ footer a:hover {
 #legend {
   /*width: 60%;*/
   height: 497px;
-}
-
-svg {
-  border-radius: 10px;
 }
 
 #audio {
