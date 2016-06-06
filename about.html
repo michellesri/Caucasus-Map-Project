@@ -18,11 +18,10 @@
   <link rel="stylesheet" type="text/css" href="vendor/skeleton_css/normalize.css">
   <link rel="stylesheet" type="text/css" href="vendor/skeleton_css/skeleton.css">
   <link rel="stylesheet" type="text/css" href="css/layout.css">
-  <link rel="stylesheet" type="text/css" href="css/animation.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<!-- TODO: create and insert favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 
 </head>
 
@@ -34,6 +33,7 @@
   <div class="container">
     <div class="row">
       <div class="one-thirds.column u-pull-left">
+        <a class="logo" href="index.html"><img src="images/icon-mountain-gray.png" id="logo" /></a>
         <a class="logo" href="index.html">Atlas of the Caucasus</a>
       </div>
       <div class="two-thirds.column u-pull-right">
@@ -51,20 +51,43 @@
   <div class="container">
     <div class="row">
       <h2>How the Atlas Came to Be</h2>
-      <p>The Atlas of the Caucasus is the capstone project of four students in the May 2015 session of <a href="http://codefellows.org">Code Fellows</a> Code 201 Boot Camp.</p>
-      <div class="three columns">
-        <ul>
-          <li>name here</li>
-          <li>name here</li>
-          <li>name here</li>
-          <li>name here</li>
-        </ul>
+      <p>The Atlas of the Caucasus is the capstone project of four students in the <a href="http://codefellows.org" target="_blank">Code Fellows</a> Code 201 Boot Camp.</p>
+    </div>
+    <div class="row">
+      <div class="two columns">
+        <p>May 2015<br />Portland, OR</p>
+        <p><a href="https://github.com/mjfreem1/Caucasus-Map-Project" target="_blank">PROJECT REPO</a></p>
       </div>
-      <div class="three.columns u-pull-left">
-        <img src="images/code-fellows-logo.png" alt="">
+      <div class="five columns">
+        <img id='cfLogo' src="images/code-fellows-logo.png" alt="">
       </div>
     </div>
-  </div>
+
+    <div class="row">
+      <p><b>Here's a goofy animation</b></p>
+      <div class = "row">
+        <div class = "one column">
+          <img src="images/icon-mountain.svg" id="mountain-logo" alt=""/>
+        </div>
+        <div class = "eleven columns" id='bike'>
+          <img src="images/person_on_bicycle.png" alt=""/>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <p><b>TEAM MEMBERS:</b></b>
+        <ul>
+          <li>The Venerable L. (<em>on the bike</em>)</li>
+          <li>A collection of M's (in no particular order):</li>
+          <ol>
+            <li>M.</li>
+            <li>M.</li>
+            <li>M.</li>
+          </ol>
+        </ul>
+      </p>
+    </div>
 </section>
 
 <section class="sect2" id="about2">
@@ -72,22 +95,22 @@
     <div class="row">
       <h2>Sources</h2>
       <ul>
-        <li>source 1 here</li>
-        <li>source 2 here</li>
-        <li>source 3 here, etc</li>
+        <li>de Waal, Thomas. <cite>The Caucasus - An Introduction</cite>. New York: Oxford University Press, 2010.</li>
+        <li>King, Charles. <cite>The Ghost of Freedom - A History of the Caucasus</cite>. New York: Oxford University Press, 2008.</li>
+        <li>Altstadt, Audrey. <cite>The Azerbaijani Turks</cite>. Stanford: Hoover Institution Press, 1992.</li>
+        <li>Suny, Ronald Grigor. <cite>The Making of the Georgian Nation</cite>. Bloomington: Indiana University Press, 1994.</li>
+        <li>Suny, Ronald Grigor. <cite>Looking Toward Ararat - Armenia in Modern History</cite>. Bloomington: Indiana University Press, 1993.</li>
+        <li>Wertsch, James V. <cite>Five Things Worth Knowing about the Caucasus</cite>. Pulitzer Center on Crisis Reporting, 2013.</li>
+        <li>Political map data from Geo-referencing Ethnic Power Relations database, International Institute for Conflict Research.</li>
+        <li>Language map based on "Ethnolinguistic groups in the Caucasus Region" from the US State Department</li>
+        <li>Graphics from the <cite>Noun Project</cite>, created by Anton Noskov and Creative Stall.</li>
+        <li>Historical Richness <a href="http://www.caravan-serai.com/wp-content/uploads/2013/02/Baku-oldcity1.jpg">photo</a> by <cite>Caravan Serai Tours, Inc.</cite></li>
+        <li>Linguistic Diversity <a href="http://blog.wandelion.com/wp-content/uploads/2015/09/details_9.jpg">photo</a> by <cite>Wandelion Blog: Travel News, Stories, Tips &amp; How-To Guides</cite>.</li>
+        <li>Invisible Borders photo by Michael Freeman.</li>
       </ul>
     </div>
   </div>
 </section>
-
-<!-- Section 3 Not Needed for About Page -->
-<!-- <section class="sect3" id="about3">
-  <div class="container">
-    <div class="row">
-      <p></p>
-    </div>
-  </div>
-</section> -->
 
   <footer>
     <div class="container"></div>
@@ -98,12 +121,9 @@
       </div>
     </div>
   </footer>
+
   <!-- End Document
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-<script src="vendor/Chart.min.js"></script>
-<script src="js/pol.js"></script>
-<script src="js/lang.js"></script>
 
 </body>
 </html>

@@ -18,11 +18,10 @@
   <link rel="stylesheet" type="text/css" href="vendor/skeleton_css/normalize.css">
   <link rel="stylesheet" type="text/css" href="vendor/skeleton_css/skeleton.css">
   <link rel="stylesheet" type="text/css" href="css/layout.css">
-  <link rel="stylesheet" type="text/css" href="css/animation.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- TODO: create and insert favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 
 </head>
 <body>
@@ -33,6 +32,7 @@
   <div class="container">
     <div class="row">
       <div class="one-thirds.column u-pull-left">
+        <a class="logo" href="index.html"><img src="images/icon-mountain-gray.png" id="logo" /></a>
         <a class="logo" href="index.html">Atlas of the Caucasus</a>
       </div>
       <div class="two-thirds.column u-pull-right">
@@ -47,12 +47,19 @@
 <!-- Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <section class="sect1" id="home1">
-  <div class="container">
-    <div class="row">
-      <div class="twelve.columns">
-        <h1>Title / Welcome Message</h1>
-        <P>Introductory text</P>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<p>
+  <div id="video">
+    <video autoplay loop poster="vid/clouds.jpg" id="video" muted="true">
+      <source src="vid/cloudsVid.mp4" type="video/mp4">
+      <source src="vid/clouds.ogv" type="video/ogg">
+    </video>
+  </div>
+
+  <div id="overlay">
+    <div class="container">
+      <div class="row">
+        <h1 class="mainTitle">The Caucasus</h1>
+        <h4>East meets West.  Old meets New.  Mountain meets Plain.</h4>
+        <p>At the intersection of language, culture, and politics,<br />the Caucasus region, named for the eponymous mountain range that divides it,<br />represents the nexus of six major world cultures.</p>
       </div>
     </div>
   </div>
@@ -61,60 +68,45 @@
   <section class="sect2" id="home2">
     <div class="container">
       <div class="row">
-          <div id="carousel">
-            Carousel images or quotes here
-          </div>
+        <div class="seven columns">
+          <h2><a href="background.html">Historical Richness</a></h2>
+          <h5>A Profoundly Diverse Region</h5>
+          <p>Many empires have laid claim to the Caucasian region, from Greeks and Mongols to Byzantines, Ottomans, and Soviets. Between the successive waves of conquerors and the natural isolation of mountain communities, the Caucasus is extraordinarily diverse both linguistically and ethnically.</p>
+        </div>
+        <div class="five columns">
+          <a href="background.html"><div id="imgBgrd"></div></a>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="sect3" id="home3">
-
-    <div id="background">
-      <div class="container">
+    <div class="container">
+      <div class="row">
+        <div class="five columns">
+          <a href="languages.html"><div id="imgLang"></div></a>
+        </div>
         <div class="seven columns">
-          <h2>Historical Richness</h2>
-          <h5>A Profoundly Diverse Region</h5>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-        <div class="row">
-          <div class="five columns">
-            <img src="images/placeholderImage.png" alt="" />
-          </div>
+          <h2><a href="languages.html">Linguistic Diversity</a></h2>
+          <h5>More than Sixty Living Languages</h5>
+          <p>The Caucasus, an area scarcely larger than New England, is home to more than sixty languages and almost as many ethnic groups. These languages belong to six completely distinct linguistic families, with each family bearing almost no grammatical resemblance to the others.</p>
         </div>
       </div>
     </div>
+  </section>
 
-    <div id="languages">
-      <div class="container">
-        <div class="row">
-          <div class="five columns">
-            <img src="images/placeholderImage.png" alt="" />
-          </div>
-          <div class="seven columns">
-            <h2>Linguistic Diversity</h2>
-            <h5>27 Living Languages in XX Square Miles</h5>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          </div>
+  <section class="sect4" id="home4">
+    <div class="container">
+      <div class="row">
+        <div class="seven columns">
+          <h2><a href="politics.html">Invisible Borders</a></h2>
+          <h5>Bounded by Religion, not Topography</h5>
+          <p>The Caucasus is home to more than 50 different ethnic concentrations. They represent the geographic confluence of Europe and Asia with the Caucasian groups that have lived there for millennia, with religion as the defining factor.</p>
+        </div>
+        <div class="five columns">
+          <a href="politics.html"><div id="imgPol"></div></a>
         </div>
       </div>
-    </div>
-
-    <div id="politics">
-      <div class="container">
-        <div class="row">
-          <div class="seven columns">
-            <h2>Invisible Borders</h2>
-            <h5>Cultural Histories that Rarely Align to Political Boundaries</h5>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          </div>
-          <div class="five columns">
-            <img src="images/placeholderImage.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-
     </div>
   </section>
 
@@ -130,7 +122,5 @@
   <!-- End Document
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<script src="vendor/Chart.min.js"></script>
-<script src="js/pol.js"></script>
-<script src="js/lang.js"></script></body>
+</body>
 </html>

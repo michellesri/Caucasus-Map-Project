@@ -18,11 +18,10 @@
   <link rel="stylesheet" type="text/css" href="vendor/skeleton_css/normalize.css">
   <link rel="stylesheet" type="text/css" href="vendor/skeleton_css/skeleton.css">
   <link rel="stylesheet" type="text/css" href="css/layout.css">
-  <link rel="stylesheet" type="text/css" href="css/animation.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<!-- TODO: create and insert favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 
 </head>
 
@@ -34,6 +33,7 @@
   <div class="container">
     <div class="row">
       <div class="one-thirds.column u-pull-left">
+        <a class="logo" href="index.html"><img src="images/icon-mountain-gray.png" id="logo" /></a>
         <a class="logo" href="index.html">Atlas of the Caucasus</a>
       </div>
       <div class="two-thirds.column u-pull-right">
@@ -50,16 +50,27 @@
 <section class="sect1" id="lang1">
   <div class="container">
     <div class="row">
-      <h2>Welcome! An Interactive Map</h2>
-      <p>Below, you may mouse over the map to learn more about the languages that are being used throughout the regions. As you mouse over, information will appear to the right of the map. At the bottom of each blurb, there are two phrases that have their phonetic pronunciation next to them. The first word means 'Hello' and the second one means 'Goodbye.' </p>
-    </div>
-    <div>
-      <button>Audio On/Off</button>
+      <h2 class="secondaryTitle">Linguistic Diversity</h2>
+      <p>The Caucasus numbers among the most linguistically diverse regions on the planet. It's estimated that over sixty separate ethnic groups live in the area, each with its own unique language and culture.</p>
     </div>
   </div>
 </section>
 
 <section class="sect2" id="lang2">
+  <div class="container">
+    <div class="row">
+      <div class="one column">
+        <img src="images/icon-pointer.png" alt="" id="pointer" />
+      </div>
+      <div class="eleven columns">
+        <p>Move your cursor over the map below to learn about the languages spoken throughout the Caucasus.<br />A summary of each language will appear, together with two essential phrases and their phonetic pronunciation. Some phrases have examples of native speakers pronouncing them attached; click on the corresponding area of the map to hear them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="sect3" id="lang3">
   <div class="container">
     <div class="row">
       <div class="six columns"> <!-- map code -->
@@ -1055,7 +1066,11 @@
         </g>
         </svg>
       </div>
+      <div id="audioDiv">
+        <audio id="audio"></audio>
+      </div>
       <div class="six columns"> <!-- text -->
+        <img id="legend" src="images/legend.png">
         <div class="blurbs" id="russiaBlurb">
           <h3>Russian</h3>
           <p>Russian is a Slavic language spoken throughout the former Soviet Union. It belongs to the East Slavic branch of the Slavic language family, which is the largest in the Indo-European group. Though Russian once served as a lingua franca for many different nationalities within the USSR, it is being increasingly supplanted by English in this capacity.</p>
@@ -1137,7 +1152,7 @@
   </div>
 </section>
 
-<section class="sect3" id="lang3">
+<section class="sect4" id="lang4">
   <div class="container">
     <div class="row">
       <canvas id="canvas" width="600" height="400"></canvas>
@@ -1145,31 +1160,33 @@
   </div>
 </section>
 
-<section class="sect4" id="lang4">
+<section class="sect5" id="lang5">
   <div class="container">
+    <h4>Tell us about your experience with the Caucasus</h4>
+    <br />
     <form action="">
       <div class="row">
         <div class="six columns">
           <label for="countryInput">Country of Residence</label>
-          <input class="u-full-width" type="text" placeholder="United States" id="country">
+          <input class="u-full-width" type="text" placeholder="United States" id="uCountry">
         </div>
         <div class="six columns">
           <label for="languageInput">Native Language</label>
-          <input class="u-full-width" type="text" placeholder="English" id="language">
+          <input class="u-full-width" type="text" placeholder="English" id="uLanguage">
         </div>
       </div>
       <div class="row">
         <div class="six columns">
           <label for="visitedInput">Have you ever visited the Caucasus?</label>
-          <input type="radio" name="visited" value="yes"> Yes<br />
-          <input type="radio" name="visited" value="no"> No<br />
-          <input type="radio" name="visited" value="fromCaucasus"> I'm from the Caucasus<br />
+          <input type="radio" name="uVisited" value="yes"> Yes<br />
+          <input type="radio" name="uVisited" value="no"> No<br />
+          <input type="radio" name="uVisited" value="fromCaucasus"> I'm from the Caucasus<br />
         </div>
         <div class="six columns">
-          <label for="languageInput">Do you speak any of the langauges spoken in the Caucasus?</label>
-          <input type="radio" name="speaks" value="yesNative"> Yes, I'm a native speaker<br />
-          <input type="radio" name="speaks" value="yesSecondary"> Yes, I studied a Caucasian language<br />
-          <input type="radio" name="speaks" value="no"> No<br />
+          <label for="languageInput">Do you speak any of the langauges found in the Caucasus?</label>
+          <input type="radio" name="uSpeaks" value="yesNative"> Yes, I'm a native speaker<br />
+          <input type="radio" name="uSpeaks" value="yesSecondary"> Yes, I studied a language of the Caucasus<br />
+          <input type="radio" name="uSpeaks" value="no"> No<br />
         </div>
         <div class="row">
           <input class="button-primary" type="submit" id="langSubmit" value="Submit">
@@ -1191,6 +1208,9 @@
   </footer>
   <!-- End Document
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
 <script src="vendor/Chart.min.js"></script>
 <script src="js/lang.js"></script>
+
+</body>
 </html>

@@ -4,7 +4,7 @@
 var countryNames = ['Russia', 'Turkey', 'Iran', 'Georgia', 'Armenia', 'Azerbaijan'];
 
 // the population of the countries is in the millions and corresponds to the order of the country names
-var countryPop = ['143500000', '74930000', '74450000', '4477000', '2977000', '9417000'];
+var countryPop = ['143.5', '74.93', '74.45', '4.477', '2.977', '9.417'];
 
 function draw(countryNames, countryPop) {
 
@@ -14,7 +14,12 @@ function draw(countryNames, countryPop) {
     data: {
       labels: countryNames,
       datasets: [{
-        label: 'Population of Countries',
+        label: 'Population of Countries (millions)',
+        backgroundColor: 'rgba(87,70,88,0.4)',
+        borderColor: 'rgba(87,70,88,0.7)',
+        borderWidth: 1,
+        hoverBackgroundColor: 'rgba(87,70,88,0.7)',
+        hoverBorderColor: 'rgba(87,70,88,1)',
         data: countryPop,
       }]
     },
